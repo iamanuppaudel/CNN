@@ -7,13 +7,13 @@ top = tkinter.Tk()
 top.geometry("750x760")
 top.title('SLRS')
 def predict():
-   os.system('recognise.py')
+   os.system('python recognise.py')
 
 def about():
 	messagebox.showinfo("About Us", "WE are SLRS")
 
 def testmodel():
-	os.system('test_model.py')
+	os.system('python test_model.py')
 
 
 B = tkinter.Button(top, text ="Predict", command = predict, bg='grey',height=2,width=50)
